@@ -13,7 +13,7 @@ const ExpenseItem = (props) => {
     //destructuring
     //returns 2 elements where title is the current value and setTitle is the value to be updated
 
-    const [title, setTitle] = useState(props.title); 
+    const [title, setTitle] = useState(props.name); 
 
     const clickHandler = () =>{
       setTitle('Updated');
@@ -24,8 +24,8 @@ const ExpenseItem = (props) => {
       <Card className="expense-item">
         <ExpenseDate date={props.date} />
         <div className="expense-item__description">
-          <h2>{ title}</h2>
-          <div className="expense-item__price">{props.amount}</div>
+          <h2>{title}</h2>
+          <div className="expense-item__price">{props.experience}</div>
         </div>
         {/* <button onClick={clickHandler}>Change Title</button> */}
       </Card>

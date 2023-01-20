@@ -3,9 +3,9 @@
  import React from 'react';
  
  function ExpenseDate(props) {
-    const month = props.date.toLocaleString("en-US", { month: 'long' });
-    const day = props.date.toLocaleString("en-US", { day: "2-digit" });
-    const year = props.date.getFullYear();
+    const month = props.date?.toLocaleString("en-US", { month: 'long' });
+    const day = props.date?.toLocaleString("en-US", { day: "2-digit" });
+    const year = props.date?.getFullYear();
     /* formatting of the month, day and year by using toLocaleString method in js.  */
 
     return (
